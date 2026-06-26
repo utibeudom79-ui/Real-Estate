@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Villas - Primeva</title>
+  <link rel="stylesheet" href="primeva.css">
+</head>
+<body>
+
+  <nav class="p-nav">
+  <div class="p-logo">Prime<span>va</span></div>
+  <button class="p-hamburger" onclick="this.closest('nav').querySelector('ul').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="heroes.html">Home</a></li>
+    <li><a href="villa.html" class="active">Villa</a></li>
+    <li><a href="land.html">Land</a></li>
+    <li><a href="commercial.html">Commercial</a></li>
+  </ul>
+</nav>
+
+  <section class="p-hero">
+    <div class="p-hero-text">
+      <p class="p-label">Category</p>
+      <h1>Luxury <span>Villas</span></h1>
+      <p class="p-sub">Explore our finest villa collections across Lagos, Abuja and Uyo</p>
+    </div>
+  </section>
+
+  <section class="p-listings">
+
+    <div class="p-card" onclick="window.location='property-detail.html'">
+      <img src="img(80).jpeg" alt="Villa">
+      <div class="p-card-body">
+        <div class="p-card-top">
+          <span class="p-category">Villa</span>
+          <span class="p-badge sale">For Sale</span>
+        </div>
+        <div class="p-card-title">Sunset Ridge Villa</div>
+        <div class="p-card-location">📍 Lekki, Lagos</div>
+        <div class="p-card-footer">
+          <span class="p-price">₦85,000,000</span>
+          <span class="p-details">4 bed · 3 bath</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-card" onclick="window.location='property-detail.html'">
+      <img src="images (52).jpeg" alt="Villa">
+      <div class="p-card-body">
+        <div class="p-card-top">
+          <span class="p-category">Villa</span>
+          <span class="p-badge rent">For Rent</span>
+        </div>
+        <div class="p-card-title">Palm Court Villa</div>
+        <div class="p-card-location">📍 Ikoyi, Lagos</div>
+        <div class="p-card-footer">
+          <span class="p-price">₦1,200,000/yr</span>
+          <span class="p-details">5 bed · 4 bath</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-card" onclick="window.location='property-detail.html'">
+      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&q=80" alt="Villa">
+      <div class="p-card-body">
+        <div class="p-card-top">
+          <span class="p-category">Villa</span>
+          <span class="p-badge sale">For Sale</span>
+        </div>
+        <div class="p-card-title">Emerald Gardens Villa</div>
+        <div class="p-card-location">📍 Asokoro, Abuja</div>
+        <div class="p-card-footer">
+          <span class="p-price">₦120,000,000</span>
+          <span class="p-details">5 bed · 4 bath</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-card" onclick="window.location='property-detail.html'">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80" alt="Villa">
+      <div class="p-card-body">
+        <div class="p-card-top">
+          <span class="p-category">Villa</span>
+          <span class="p-badge rent">For Rent</span>
+        </div>
+        <div class="p-card-title">Royal Palms Villa</div>
+        <div class="p-card-location">📍 Uyo, Akwa Ibom</div>
+        <div class="p-card-footer">
+          <span class="p-price">₦900,000/yr</span>
+          <span class="p-details">3 bed · 2 bath</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-card" onclick="window.location='property-detail.html'">
+      <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400&q=80" alt="Villa">
+      <div class="p-card-body">
+        <div class="p-card-top">
+          <span class="p-category">Villa</span>
+          <span class="p-badge sale">For Sale</span>
+        </div>
+        <div class="p-card-title">Azure Heights Villa</div>
+        <div class="p-card-location">📍 Maitama, Abuja</div>
+        <div class="p-card-footer">
+          <span class="p-price">₦200,000,000</span>
+          <span class="p-details">6 bed · 5 bath</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="p-footer">
+    <p>© 2026 Primeva. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

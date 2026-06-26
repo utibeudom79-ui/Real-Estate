@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Property Detail - Primeva</title>
+  <link rel="stylesheet" href="primeva.css">
+</head>
+<body>
+
+<nav class="p-nav">
+  <div class="p-logo">Prime<span>va</span></div>
+  <button class="p-hamburger" onclick="this.closest('nav').querySelector('ul').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="heroes.html">Home</a></li>
+    <li><a href="villa.html">Villa</a></li>
+    <li><a href="land.html">Land</a></li>
+    <li><a href="commercial.html">Commercial</a></li>
+  </ul>
+</nav>
+
+  <!-- IMAGE SLIDER -->
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" alt="Interior 1">
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80" alt="Interior 2">
+      <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80" alt="Interior 3">
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Interior 4">
+      <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80" alt="Interior 5">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Interior 6">
+    </div>
+    <button class="slide-btn prev" onclick="changeSlide(-1)">&#8592;</button>
+    <button class="slide-btn next" onclick="changeSlide(1)">&#8594;</button>
+    <div class="slide-dots" id="dots"></div>
+  </div>
+
+  <!-- PROPERTY INFO -->
+  <section class="detail-section">
+    <div class="detail-top">
+      <div>
+        <p class="p-label">Villa</p>
+        <h1 class="detail-title">Sunset Ridge Villa</h1>
+        <div class="p-card-location">📍 Lekki, Lagos</div>
+      </div>
+      <div class="detail-price">₦85,000,000</div>
+    </div>
+
+    <div class="detail-badges">
+      <span class="p-badge sale">For Sale</span>
+      <span class="detail-tag">4 Bedrooms</span>
+      <span class="detail-tag">3 Bathrooms</span>
+      <span class="detail-tag">450 sqm</span>
+    </div>
+
+    <div class="detail-divider"></div>
+
+    <h3 class="detail-subhead">About This Property</h3>
+    <p class="detail-desc">
+      This stunning villa offers an unparalleled living experience in the heart of Lekki. Featuring spacious rooms, premium finishes, and a beautifully landscaped garden, this property is perfect for families seeking luxury and comfort. The open-plan living area flows seamlessly into an outdoor terrace with breathtaking views.
+    </p>
+
+    <div class="detail-divider"></div>
+
+    <h3 class="detail-subhead">Features</h3>
+    <div class="features-grid">
+      <div class="feature-item">🏊 Swimming Pool</div>
+      <div class="feature-item">🔒 24/7 Security</div>
+      <div class="feature-item">⚡ Constant Power</div>
+      <div class="feature-item">🚗 2 Car Garage</div>
+      <div class="feature-item">🌿 Garden</div>
+      <div class="feature-item">📡 Smart Home</div>
+    </div>
+
+    <div class="detail-divider"></div>
+
+    <h3 class="detail-subhead">Contact an Agent</h3>
+    <div class="agent-contact">
+
+      <div class="agent-contact-card">
+        <img src="imgbu.jpg" alt="Agent"
+          onerror="this.src='https://randomuser.me/api/portraits/men/32.jpg'">
+        <div>
+          <div class="agent-contact-name">Buchi Nwegbu</div>
+          <div class="agent-contact-title">Property Consultant</div>
+        </div>
+        <div class="agent-contact-icons">
+          <a href="tel:07047330025" class="icon-call">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#1a73e8">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/2347047330025" target="_blank" class="icon-whatsapp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="#25D366">
+              <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.027 7.807L0 32l8.385-2.027A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.771-1.854l-.486-.29-5.03 1.216 1.243-4.916-.317-.504A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.354-1.162-2.72-1.294-.364-.133-.63-.199-.895.199-.265.398-1.029 1.294-1.261 1.56-.232.265-.465.298-.863.1-.398-.2-1.682-.62-3.204-1.98-1.184-1.057-1.983-2.362-2.215-2.76-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.697.199-.232.265-.398.398-.664.133-.265.066-.497-.033-.697-.1-.199-.895-2.157-1.227-2.952-.323-.775-.65-.67-.895-.682l-.762-.013c-.265 0-.697.1-.862.398-.232.398-1.028 1.294-1.028 3.152s1.028 3.55 1.172 3.782c.144.232 2.02 3.084 4.894 4.326.685.296 1.219.472 1.635.604.687.219 1.312.188 1.806.114.551-.082 2.354-.962 2.686-1.891.332-.93.332-1.727.232-1.891-.1-.165-.364-.265-.762-.464z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+<div class="detail-cta">
+  <a href="https://wa.me/2347075256299?text=Hello%2C%20I%20am%20interested%20in%20this%20property%20and%20would%20like%20to%20book%20a%20tour."
+     class="whatsapp-tour" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="white">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.027 7.807L0 32l8.385-2.027A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.771-1.854l-.486-.29-5.03 1.216 1.243-4.916-.317-.504A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.354-1.162-2.72-1.294-.364-.133-.63-.199-.895.199-.265.398-1.029 1.294-1.261 1.56-.232.265-.465.298-.863.1-.398-.2-1.682-.62-3.204-1.98-1.184-1.057-1.983-2.362-2.215-2.76-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.697.199-.232.265-.398.398-.664.133-.265.066-.497-.033-.697-.1-.199-.895-2.157-1.227-2.952-.323-.775-.65-.67-.895-.682l-.762-.013c-.265 0-.697.1-.862.398-.232.398-1.028 1.294-1.028 3.152s1.028 3.55 1.172 3.782c.144.232 2.02 3.084 4.894 4.326.685.296 1.219.472 1.635.604.687.219 1.312.188 1.806.114.551-.082 2.354-.962 2.686-1.891.332-.93.332-1.727.232-1.891-.1-.165-.364-.265-.762-.464z"/>
+    </svg>
+    Book a Tour on WhatsApp
+  </a>
+  <a href="heroes.html" class="cta-back">← Back to Home</a>
+</div>
+
+  </section>
+
+  <footer class="p-footer">
+    <p>© 2026 Primeva. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let current = 0;
+    const slides = document.getElementById('slides');
+    const total = slides.children.length;
+    const dotsContainer = document.getElementById('dots');
+
+    // Create dots
+    for (let i = 0; i < total; i++) {
+      const dot = document.createElement('span');
+      dot.className = 'dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => goToSlide(i);
+      dotsContainer.appendChild(dot);
+    }
+
+    function goToSlide(n) {
+      current = n;
+      slides.style.transform = `translateX(-${current * 100}%)`;
+      document.querySelectorAll('.dot').forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    function changeSlide(dir) {
+      current = (current + dir + total) % total;
+      goToSlide(current);
+    }
+
+    // Auto slide every 4 seconds
+    setInterval(() => changeSlide(1), 4000);
+  </script>
+
+</body>
+</html>
